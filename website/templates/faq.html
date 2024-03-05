@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/faq.css">
+	<link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>FAQs</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+            <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+        </div>
+    </div>
+	</nav>
+
+    <section>
+		<br><br>
+        <h2 class="title">FAQs</h2>
+
+        <div class="faq">
+            <div class="question">
+                <h3>What is CATS?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>Conditional Analysis of Traffic Signs (CATS) is a web application for real-time object detection in images and videos. 
+It utilizes advanced machine learning models to recognize objects, including specific traffic signs. </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>How can I upload an image or video for object detection?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>You can upload an image or video directly on the homepage. 
+Click the "Choose File" button, select your file, and click "Submit" to start the detection process. </p>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question">
+                <h3>What types of files are supported for upload?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>Currently, the application supports image formats like JPG and PNG. 
+For videos, common formats such as MP4, AVI, MOV, and MKV are accepted. </p>
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="question">
+                <h3>How does real-time webcam streaming work?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>Navigate to the "Open Webcam" section to enable real-time object detection through the webcam.</p>
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="question">
+                <h3>Can I download the processed images or videos?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>Yes, after the object detection process is complete, you can download the annotated images or videos.</p>
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="question">
+                <h3>What object detection models are used in CATS?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>CATS employs YOLOv5 models for object detection. 
+It includes both a custom-trained model for traffic sign recognition and the default YOLOv5 model for general object detection. </p>
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="question">
+                <h3>Is my data secure and private?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>Yes, we prioritize user privacy and data security. We do not store uploaded files, and all processing is done on the server without retaining personal information. </p>
+            </div>
+        </div>
+		
+		<div class="faq">
+            <div class="question">
+                <h3>How can I provide feedback or report issues?</h3>
+
+                <svg width="15" height="10" viewBox="0 0 42 45">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                </svg>
+
+            </div>
+            <div class="answer">
+<p>We appreciate user feedback. 
+If you encounter any issues or have suggestions for improvement, please contact our support team at [catstrafficsign@gmail.com]. </p>
+            </div>
+        </div>
+		
+    </section>
+    <script src="/static/app.js"></script>
+	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+</body>
+<footer>
+		<div class="footer-content">
+		<h3>Conditional Analysis of Traffic Signs</h3>
+            <ul class="socials">
+                <li><a href="/">Home</a></li>
+				<li><a href="/about_us">About Us</a></li>
+				<li><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/catsobjectdetection/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCdEZ6g3XrJ08EYZ0hF7K6aw"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/afifdanielk/"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Ahmad Afif Daniel bin Khairuddin <span>1191302234</span></p>
+        </div>
+    </footer>
+</html>

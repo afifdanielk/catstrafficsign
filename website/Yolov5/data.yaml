@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 21  # Update the total number of classes
+names: ['Billboard', 'Green- GO', 'Green- GO Left', 'Green- GO Right', 'Green- GO Straight', 'Hump', 'Obstacles Ahead', 'Pass either side', 'Red- STOP', 'Red- STOP Left', 'Red- STOP Right', 'Red- STOP Straight', 'Sign Board', 'Stop', 'person', 'bicycle', 'car', 'motorcycle', 'bus', 'truck', 'cat']
+
+roboflow:
+  workspace: mmu-fyp
+  project: malaysian-traffic-sign
+  version: 4
+  license: Public Domain
+  url: https://universe.roboflow.com/mmu-fyp/malaysian-traffic-sign/dataset/4

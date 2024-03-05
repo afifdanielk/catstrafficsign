@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="/static/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Yolov5 Object Detection</title>
+</head>
+&nbsp;
+<body class="text-center">
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" id="home" href="/">Home</a>
+            <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+        </div>
+    </div>
+	</nav>
+
+    <form class="form-signin" method="post" enctype="multipart/form-data" onsubmit="hideNoFileMessage()">
+        <img class="mb-4" src="/static/cats.png" alt="" width="300">
+        <h1 class="h3 mb-3 font-weight-normal">Upload any file<br>(Image or Video)</h1>
+        
+        <!-- Display message if no file is uploaded -->
+        <div id="noFileMessage" class="alert alert-danger {% if not message %}d-none{% endif %}" role="alert">
+            No file uploaded
+        </div>
+        
+        <input type="file" name="file" class="form-control-file" id="inputfile" onchange="hideNoFileMessage()">
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+        <button onclick="openWebcam(event)" class="btn btn-lg btn-secondary btn-block mt-2">Open Webcam</button>
+        <p class="mt-5 mb-3 text-muted">Traffic Sign Detection System - YoloV5</p>
+    </form>
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+        function openWebcam(event) {
+            event.preventDefault(); // Prevent default button behavior
+            
+            window.open('/video_feed', 'Webcam Feed', 'width=640,height=480');
+        }
+
+        function hideNoFileMessage() {
+            const fileInput = document.getElementById("inputfile");
+            const message = document.getElementById("noFileMessage");
+            if (fileInput.value) {
+                message.classList.add("d-none");
+            } else {
+                message.classList.remove("d-none");
+            }
+        }
+    </script>
+</body>
+
+<footer>
+		<div class="footer-content">
+		<h3>Conditional Analysis of Traffic Signs</h3>
+            <ul class="socials">
+                <li><a href="/">Home</a></li>
+				<li><a href="/about_us">About Us</a></li>
+				<li><a href="/faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/catsobjectdetection/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UCdEZ6g3XrJ08EYZ0hF7K6aw"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/afifdanielk/"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Ahmad Afif Daniel bin Khairuddin <span>1191302234</span></p>
+        </div>
+    </footer>
+</html>
+
